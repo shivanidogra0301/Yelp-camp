@@ -11,7 +11,7 @@ methodOverride         =  require("method-override")
  seedDB                =  require("./seeds"),
  flash                 =  require("connect-flash")
 //  seedDB();
-mongoose.connect("mongodb+srv://shivani:shivani123@cluster0-htc7d.mongodb.net/Yelpcamp?retryWrites=true&w=majority")
+mongoose.connect("")
 var app=express();
 // Routes
 var campgroundRoute=require("./routes/campground"),
