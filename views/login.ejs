@@ -1,9 +1,25 @@
 
 <% include ./partials/header %>
-<h1>Login Page</h1>
-<form action="/login" method="POST">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <button>Submit</button>
-</form>
+
+
+
+  <div class="container" >
+    <div class="card card-container" style="background-image: linear-gradient(to right, #7ed56f, #28b485);" >
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        <p style="text-align: center; font-weight: 400;">Login</p>
+        <form class="form-signin" action="/login" method="POST">
+            <!-- <span id="reauth-email" class="reauth-email"></span> -->
+            <input type="text" id="inputEmail" class="form-control"name="username" placeholder="Username" required autofocus>
+            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+            
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Login</button>
+        </form><!-- /form -->
+        
+    </div><!-- /card-container -->
+</div><!-- /container -->
+
+
+
+
+
 <% include ./partials/footer %>
