@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="/stylesheets/app.css">
     <title>YelpCamp</title>
 </head>
-<body>
+<body style="background-color:  #eefdec;">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-image: linear-gradient(to right, #7ed56f, #28b485);margin-bottom: 30px;">
                 <a class="navbar-brand" href="/">YelpCamp</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -41,6 +41,7 @@
                 <%if(success&&success.length>0) {%>
                   <div class="alert alert-success" role="alert">
                     <%=success%>
+                    
                   </div>
                <% } %>
                <%if(error&&error.length>0) {%>
